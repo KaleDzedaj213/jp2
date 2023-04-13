@@ -1,6 +1,6 @@
 import { Text, View, Image, StyleSheet } from 'react-native';
 
-export default function Historia() {
+export default function Wstep() {
     return (
         <View style={styles.main}>
             <Image

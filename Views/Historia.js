@@ -1,10 +1,14 @@
-import { NavigationContainer } from '@react-navigation/native';
-import Drawer from "./Drawer";
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import Wstep from './Historia/Wstep'
+import Smierc from './Historia/Smierc'
 
-export default function Start() {
+const Drawer = createDrawerNavigator();
+
+export default function Historia() {
     return (
-        <NavigationContainer>
-            <Drawer />
-        </NavigationContainer>
+        <Drawer.Navigator useLegacyImplementation>
+            <Drawer.Screen name="Wstęp" component={Wstep} />
+            <Drawer.Screen name="Smierć" component={Smierc} />
+        </Drawer.Navigator>
     );
 }
